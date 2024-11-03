@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Potter\Arrayable;
+namespace PHPAble\Arrayable;
 
 use Illuminate\Contracts\Support\Arrayable;
 

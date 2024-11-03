@@ -1,5 +1,5 @@
 {
-    "name": "potter/arrayable",
+    "name": "php-ables/arrayable",
     "description": "PHP Arrayable Interface",
     "type": "library",
     "require": {
@@ -9,7 +9,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Potter\\Arrayable\\": "src/Potter/Arrayable/"
+            "PHPAbles\\Arrayable\\": "src/PHPAble/Arrayable/"
         }
     },
     "authors": [
