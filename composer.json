@@ -9,7 +9,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "PHPAbles\\Arrayable\\": "src/PHPAble/Arrayable/"
+            "PHPAbles\\": "src/PHPAble/"
         }
     },
     "authors": [
