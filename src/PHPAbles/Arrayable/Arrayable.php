@@ -23,7 +23,8 @@ final class Arrayable extends AbstractArrayable
     
     public function toArray(): array
     {
-        return $this->array;
+        $array = parent::toArray();
+        return array_key_exists('array', $array) ? $array['array'] : [];
     }
     
     private function inherit(IlluminateArrayable|InspirumArrayable|PhpExtendedArrayable $arrayable): void
