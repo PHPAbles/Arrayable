@@ -14,14 +14,11 @@ final class Arrayable extends AbstractArrayable
     
     public function __construct(array|IlluminateArrayable|InspirumArrayable|PhpExtendedArrayable $array)
     {
-        $inheritable = ($array instanceOf IlluminateArrayable) ||
-                       ($array instanceOf InspirumArrayable) ||
-                       ($array instanceOf PhpExtendedArrayable);
-        if ($inheritable) {
-            $this->inherit($array);
+        if (is_array($array)) {
+            $this->array = $array;
             return;
         }
-        $this->array = $array;
+        $this->inherit($array);
     }
     
     public function toArray(): array
