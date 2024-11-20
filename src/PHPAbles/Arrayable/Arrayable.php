@@ -34,6 +34,6 @@ final class Arrayable extends AbstractArrayable
             $this->array = $arrayable->toArray();
             return;
         }
-        $this->array = $arrayable->_toArray();
+        $this->array = $arrayable->__toArray();
     }
 }
